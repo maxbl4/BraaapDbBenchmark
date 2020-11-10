@@ -1,0 +1,4 @@
+﻿FROM mcr.microsoft.com/dotnet/sdk:5.0
+ADD ./bin/ /app/
+WORKDIR /app
+CMD [ "dotnet", "BraaapDbBenchmark.dll" ]
